@@ -133,7 +133,7 @@ services:
     image: projectdiscovery/nuclei:latest
     volumes:
       - ./root/config/nuclei:/root/.config/nuclei
-      - ./rootfs/data/nuclei:/data
+      - ./volumes/data/nuclei:/data
     ports:
       - "172.17.0.1:58001:8080"
     networks:
